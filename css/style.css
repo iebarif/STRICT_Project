@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&family=Patua+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menubar {
+  background: #f6f9f9;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.alignment {
+  width: 80%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  padding-top: 10px;
+  font-size: 20px;
+}
+ul a {
+  text-decoration: none;
+}
+.menu li a {
+  color: #2d3950;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: center;
+}
+.main_menubar {
+  display: flex;
+  gap: 30px;
+}
+
+.main_menubar li :hover {
+  background: #d8d4d4;
+  transition: 0.3s;
+  justify-content: space-between;
+}
+
+.dropmenu {
+  display: none;
+  list-style: none;
+  position: relative;
+}
+
+.menu li:hover .dropmenu {
+  display: block;
+  position: absolute;
+  background: #d1d2cf;
+  transform: translateX(40px);
+  border-radius: 10%;
+}
+
+.home_part {
+  background-image: url(/assets/background/03-STRICT.png);
+  opacity: 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+  overflow: hidden;
+}
+.home_con_min h1 {
+  padding-top: 90px;
+  font-size: 120px;
+  font-weight: 700;
+  border-bottom: 3px #15a4fa solid;
+  /* width: 50%; */
+  border-radius: 0.5%;
+  align-items: center;
+  color: #ffffff;
+  /* text-decoration: underline solid blue; */
+}
+
+.home_con_min p {
+  padding-top: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.home_con_min {
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.btn {
+  margin-top: 40px;
+  background: #f1fbf3;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: #15a4fa;
+  border: 3px solid #15a4fa;
+  color: rgb(255, 252, 245);
+  font-weight: 400;
+}
+
+.accordion {
+  background: transparent;
+  overflow: hidden;
+  opacity: none;
+  text-align: center;
+  justify-content: center;
+  align-items: left;
+  margin-top: 50px;
+  color: #ffef0a;
+}
+.accordion-button {
+  justify-content: left;
+  width: 60%;
+  font-size: 2px;
+
+  border: none;
+
+  background-color: transparent;
+
+  transition: 0.7s;
+}
+
+.home_2 {
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f6f9f9;
+  height: 180px;
+  width: 100%;
+}
+
+.home_2 p {
+  color: #b8b9b9;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.pure_logo {
+  padding-top: 35px;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.pure_logo h5 {
+  padding-top: 15px;
+  font-size: 22px;
+}
+.pure_logo p {
+  font-size: 15px;
+  padding-top: 10px;
+  color: #b8b9b9;
+}
+
+.Showcase_part {
+  background: #f6f9f9;
+}
+.Showcase_head {
+  align-items: center;
+  padding-top: 60px;
+}
+.Showcase_head h6 {
+  color: #b8b9b9;
+  padding-bottom: 50px;
+}
+
+.Showcase_img {
+  position: relative;
+}
+.Showcase_overlay {
+  width: 0%;
+  height: 0%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.Showcase_img:hover .Showcase_overlay {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  transition: 0.5s;
+}
+
+.Showcase_overlay a {
+  height: 60px;
+  width: 60px;
+  background: rgb(4, 178, 247);
+  color: rgb(247, 241, 231);
+  border-radius: 20%;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.box {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-image: url(../assets/protfolio/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.box form {
+  background: black;
+
+  width: 400px;
+  height: 420px;
+  color: #15a4fa;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+}
+/* .login_from {
+  box-decoration-break: none;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border: none;
+} */
